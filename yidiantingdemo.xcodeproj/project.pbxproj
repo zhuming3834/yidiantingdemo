@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C376F8991D01D70F00AF8A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376F8981D01D70F00AF8A4D /* AppDelegate.swift */; };
-		C376F89B1D01D70F00AF8A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376F89A1D01D70F00AF8A4D /* ViewController.swift */; };
-		C376F89E1D01D70F00AF8A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C376F89C1D01D70F00AF8A4D /* Main.storyboard */; };
 		C376F8A01D01D70F00AF8A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C376F89F1D01D70F00AF8A4D /* Assets.xcassets */; };
 		C376F8A31D01D70F00AF8A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C376F8A11D01D70F00AF8A4D /* LaunchScreen.storyboard */; };
 		C376F8AE1D01D70F00AF8A4D /* yidiantingdemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376F8AD1D01D70F00AF8A4D /* yidiantingdemoTests.swift */; };
 		C376F8B91D01D70F00AF8A4D /* yidiantingdemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376F8B81D01D70F00AF8A4D /* yidiantingdemoUITests.swift */; };
+		C3B0031B1D03167300A72D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B003171D03167300A72D11 /* AppDelegate.swift */; };
+		C3B0031C1D03167300A72D11 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B003181D03167300A72D11 /* IndexViewController.swift */; };
+		C3B0031D1D03167300A72D11 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B003191D03167300A72D11 /* IndexViewController.xib */; };
+		C3B003351D0316F000A72D11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B003341D0316F000A72D11 /* Images.xcassets */; };
+		C3B14C1E1D04341C00CA9BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C1C1D04341C00CA9BBC /* ViewController.swift */; };
+		C3B14C1F1D04341C00CA9BBC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C1D1D04341C00CA9BBC /* ViewController.xib */; };
+		C3B14C211D043A8700CA9BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C201D043A8700CA9BBC /* Main.storyboard */; };
+		C3B14C401D044E7200CA9BBC /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C3E1D044E7200CA9BBC /* LeftViewController.swift */; };
+		C3B14C411D044E7200CA9BBC /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C3F1D044E7200CA9BBC /* LeftViewController.xib */; };
+		C3B14C441D04767D00CA9BBC /* LeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C421D04767D00CA9BBC /* LeftTableViewCell.swift */; };
+		C3B14C451D04767D00CA9BBC /* LeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C431D04767D00CA9BBC /* LeftTableViewCell.xib */; };
+		C3FB50201D06F84400873077 /* StopPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB501E1D06F84400873077 /* StopPayViewController.swift */; };
+		C3FB50211D06F84400873077 /* StopPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FB501F1D06F84400873077 /* StopPayViewController.xib */; };
+		C3FB50331D07160900873077 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB50321D07160900873077 /* InputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +46,6 @@
 
 /* Begin PBXFileReference section */
 		C376F8951D01D70F00AF8A4D /* yidiantingdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yidiantingdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C376F8981D01D70F00AF8A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C376F89A1D01D70F00AF8A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C376F89D1D01D70F00AF8A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C376F89F1D01D70F00AF8A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C376F8A21D01D70F00AF8A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C376F8A41D01D70F00AF8A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +55,20 @@
 		C376F8B41D01D70F00AF8A4D /* yidiantingdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yidiantingdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376F8B81D01D70F00AF8A4D /* yidiantingdemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yidiantingdemoUITests.swift; sourceTree = "<group>"; };
 		C376F8BA1D01D70F00AF8A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B003171D03167300A72D11 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3B003181D03167300A72D11 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		C3B003191D03167300A72D11 /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
+		C3B003341D0316F000A72D11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3B14C1C1D04341C00CA9BBC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3B14C1D1D04341C00CA9BBC /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		C3B14C201D043A8700CA9BBC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C3B14C3E1D044E7200CA9BBC /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		C3B14C3F1D044E7200CA9BBC /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		C3B14C421D04767D00CA9BBC /* LeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTableViewCell.swift; sourceTree = "<group>"; };
+		C3B14C431D04767D00CA9BBC /* LeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftTableViewCell.xib; sourceTree = "<group>"; };
+		C3FB501E1D06F84400873077 /* StopPayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopPayViewController.swift; sourceTree = "<group>"; };
+		C3FB501F1D06F84400873077 /* StopPayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StopPayViewController.xib; sourceTree = "<group>"; };
+		C3FB50321D07160900873077 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +119,12 @@
 		C376F8971D01D70F00AF8A4D /* yidiantingdemo */ = {
 			isa = PBXGroup;
 			children = (
-				C376F8981D01D70F00AF8A4D /* AppDelegate.swift */,
-				C376F89A1D01D70F00AF8A4D /* ViewController.swift */,
-				C376F89C1D01D70F00AF8A4D /* Main.storyboard */,
+				C3B003161D03167300A72D11 /* UI */,
 				C376F89F1D01D70F00AF8A4D /* Assets.xcassets */,
 				C376F8A11D01D70F00AF8A4D /* LaunchScreen.storyboard */,
+				C3B14C201D043A8700CA9BBC /* Main.storyboard */,
 				C376F8A41D01D70F00AF8A4D /* Info.plist */,
+				C3B003341D0316F000A72D11 /* Images.xcassets */,
 			);
 			path = yidiantingdemo;
 			sourceTree = "<group>";
@@ -123,6 +145,25 @@
 				C376F8BA1D01D70F00AF8A4D /* Info.plist */,
 			);
 			path = yidiantingdemoUITests;
+			sourceTree = "<group>";
+		};
+		C3B003161D03167300A72D11 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C3B003171D03167300A72D11 /* AppDelegate.swift */,
+				C3B003181D03167300A72D11 /* IndexViewController.swift */,
+				C3B003191D03167300A72D11 /* IndexViewController.xib */,
+				C3B14C1C1D04341C00CA9BBC /* ViewController.swift */,
+				C3B14C1D1D04341C00CA9BBC /* ViewController.xib */,
+				C3B14C3E1D044E7200CA9BBC /* LeftViewController.swift */,
+				C3B14C3F1D044E7200CA9BBC /* LeftViewController.xib */,
+				C3B14C421D04767D00CA9BBC /* LeftTableViewCell.swift */,
+				C3B14C431D04767D00CA9BBC /* LeftTableViewCell.xib */,
+				C3FB501E1D06F84400873077 /* StopPayViewController.swift */,
+				C3FB501F1D06F84400873077 /* StopPayViewController.xib */,
+				C3FB50321D07160900873077 /* InputView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +274,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C376F8A31D01D70F00AF8A4D /* LaunchScreen.storyboard in Resources */,
+				C3FB50211D06F84400873077 /* StopPayViewController.xib in Resources */,
+				C3B003351D0316F000A72D11 /* Images.xcassets in Resources */,
+				C3B14C411D044E7200CA9BBC /* LeftViewController.xib in Resources */,
+				C3B14C1F1D04341C00CA9BBC /* ViewController.xib in Resources */,
+				C3B14C211D043A8700CA9BBC /* Main.storyboard in Resources */,
+				C3B14C451D04767D00CA9BBC /* LeftTableViewCell.xib in Resources */,
 				C376F8A01D01D70F00AF8A4D /* Assets.xcassets in Resources */,
-				C376F89E1D01D70F00AF8A4D /* Main.storyboard in Resources */,
+				C3B0031D1D03167300A72D11 /* IndexViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C376F89B1D01D70F00AF8A4D /* ViewController.swift in Sources */,
-				C376F8991D01D70F00AF8A4D /* AppDelegate.swift in Sources */,
+				C3B0031B1D03167300A72D11 /* AppDelegate.swift in Sources */,
+				C3FB50331D07160900873077 /* InputView.swift in Sources */,
+				C3B14C441D04767D00CA9BBC /* LeftTableViewCell.swift in Sources */,
+				C3B14C1E1D04341C00CA9BBC /* ViewController.swift in Sources */,
+				C3FB50201D06F84400873077 /* StopPayViewController.swift in Sources */,
+				C3B14C401D044E7200CA9BBC /* LeftViewController.swift in Sources */,
+				C3B0031C1D03167300A72D11 /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C376F89C1D01D70F00AF8A4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C376F89D1D01D70F00AF8A4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C376F8A11D01D70F00AF8A4D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -402,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = yidiantingdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hgdq.yidiantingdemo;
@@ -413,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = yidiantingdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hgdq.yidiantingdemo;
@@ -447,10 +493,13 @@
 		C376F8C41D01D70F00AF8A4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/yidiantingdemo/yidiantingPCH.pch";
 				INFOPLIST_FILE = yidiantingdemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hgdq.yidiantingdemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/yidiantingdemo/yidiantingPCH.pch";
 				TEST_TARGET_NAME = yidiantingdemo;
 			};
 			name = Debug;
@@ -458,10 +507,13 @@
 		C376F8C51D01D70F00AF8A4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/yidiantingdemo/yidiantingPCH.pch";
 				INFOPLIST_FILE = yidiantingdemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hgdq.yidiantingdemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/yidiantingdemo/yidiantingPCH.pch";
 				TEST_TARGET_NAME = yidiantingdemo;
 			};
 			name = Release;
@@ -485,6 +537,7 @@
 				C376F8BF1D01D70F00AF8A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C376F8C01D01D70F00AF8A4D /* Build configuration list for PBXNativeTarget "yidiantingdemoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +546,7 @@
 				C376F8C21D01D70F00AF8A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C376F8C31D01D70F00AF8A4D /* Build configuration list for PBXNativeTarget "yidiantingdemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +555,7 @@
 				C376F8C51D01D70F00AF8A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

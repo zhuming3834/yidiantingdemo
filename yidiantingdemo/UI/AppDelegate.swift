@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 设置跟控制器
+        let  launch =  NSUserDefaults.standardUserDefaults().valueForKey("firstLaunch");
+        
+        if launch == nil {
+            let indexVC = IndexViewController();
+            window?.rootViewController = indexVC;
+        } else{
+//            let navControlView = UINavigationController.init(rootViewController: ViewController());
+//            print("\(navControlView.childViewControllers.count)");
+            window?.rootViewController = ViewController();
+        }
         return true
     }
 

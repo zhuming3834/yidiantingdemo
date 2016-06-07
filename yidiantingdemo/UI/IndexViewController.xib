@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndexViewController" customModule="yidiantingdemo" customModuleProvider="target">
+            <connections>
+                <outlet property="enterButton" destination="lLt-EK-YpO" id="fgM-yr-SjB"/>
+                <outlet property="pageControl" destination="VgY-2e-Biy" id="rLS-Hj-yCf"/>
+                <outlet property="scrollView" destination="jrZ-vV-1ea" id="zSZ-Fs-eI8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrZ-vV-1ea">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="trB-J4-gbF"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="VgY-2e-Biy">
+                    <rect key="frame" x="93" y="400" width="135" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="COW-Hd-80G"/>
+                    </constraints>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLt-EK-YpO">
+                    <rect key="frame" x="93" y="400" width="135" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.34936884663506396" blue="0.61373507453350862" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="32n-4O-6ou"/>
+                    </constraints>
+                    <state key="normal" title="立即体验">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="5z2-xq-GNS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lLt-EK-YpO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="93" id="APN-uv-jIt"/>
+                <constraint firstAttribute="trailing" secondItem="VgY-2e-Biy" secondAttribute="trailing" constant="92" id="CS2-x9-PqC"/>
+                <constraint firstAttribute="trailing" secondItem="jrZ-vV-1ea" secondAttribute="trailing" id="Dsy-iM-juT"/>
+                <constraint firstItem="jrZ-vV-1ea" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="e4u-AH-95X"/>
+                <constraint firstAttribute="bottom" secondItem="VgY-2e-Biy" secondAttribute="bottom" constant="131" id="gwB-v9-BxZ"/>
+                <constraint firstAttribute="bottom" secondItem="jrZ-vV-1ea" secondAttribute="bottom" id="iIs-jw-2OO"/>
+                <constraint firstAttribute="bottom" secondItem="lLt-EK-YpO" secondAttribute="bottom" constant="128" id="iXb-iq-8Zh"/>
+                <constraint firstAttribute="trailing" secondItem="lLt-EK-YpO" secondAttribute="trailing" constant="92" id="oeN-Ed-XZK"/>
+                <constraint firstItem="jrZ-vV-1ea" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="scb-ym-UA2"/>
+                <constraint firstItem="VgY-2e-Biy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="93" id="ujR-Ok-veY"/>
+            </constraints>
+            <point key="canvasLocation" x="235" y="313"/>
+        </view>
+    </objects>
+</document>

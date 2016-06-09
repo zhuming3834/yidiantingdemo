@@ -1,5 +1,5 @@
 //
-//  InputView.swift
+//  InputView3.swift
 //  yidiantingdemo
 //
 //  Created by hgdq on 16/6/7.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol InputViewDelegate {
-    func getInputViewString(inputString:String);
+protocol InputView3Delegate {
+    func getInputView3String(inputString:String);
 }
 
-class InputView: UIView ,UICollectionViewDelegate,UICollectionViewDataSource{
+class InputView3: UIView ,UICollectionViewDelegate,UICollectionViewDataSource{
     
     
-    var delegate: InputViewDelegate?;
+    var delegate: InputView3Delegate?;
     
     
     let regionArray = ["京","沪","粤","津","浙","苏",
@@ -24,14 +24,14 @@ class InputView: UIView ,UICollectionViewDelegate,UICollectionViewDataSource{
                        "辽","宁","鲁","晋","吉","翼",
                        "黑","甘","鄂","赣","贵","川",
                        "藏"];
-//                      40*6 + 20
+    //                      40*6 + 20
     
     let charArray =    ["A","B","C","D","E","F",
                         "G","H","I","J","K","L",
                         "M","N","O","P","Q","R",
                         "S","T","U","V","W","X",
                         "Y","Z","港","澳"];
-//                      40*5 + 20
+    //                      40*5 + 20
     
     let numArray =     ["1","2","3","4","5","6",
                         "7","8","9","0","","",
@@ -40,11 +40,11 @@ class InputView: UIView ,UICollectionViewDelegate,UICollectionViewDataSource{
                         "M","N","O","P","Q","R",
                         "S","T","U","V","W","X",
                         "Y","Z","港","澳"];
-//                      40*7 + 20
+    //                      40*7 + 20
     
     
-    internal func addInputView(superView:UIView) -> InputView {
-        let inputView = InputView();
+    internal func addInputView(superView:UIView) -> InputView3 {
+        let inputView = InputView3();
         inputView.frame = CGRectMake(0, 64, superView.frame.size.width, superView.frame.size.height - 64);
         superView.addSubview(inputView);
         inputView.initView();
@@ -53,15 +53,15 @@ class InputView: UIView ,UICollectionViewDelegate,UICollectionViewDataSource{
     
     
     func initView() {
-    
-        let height = 260
-                /// 上面的蒙蔽层
+        
+        let height = 300
+        /// 上面的蒙蔽层
         let bgView = UIView.init(frame: CGRectMake(0, 0, self.frame.size.width, self.frame.size.height - CGFloat(height)));
         bgView.backgroundColor = UIColor.init(red: 243/255, green: 243/255, blue: 243/255, alpha: 0.2);
         self.addSubview(bgView);
-                /// 蒙蔽层点击手势  收起视图
+        /// 蒙蔽层点击手势  收起视图
         let tap = UITapGestureRecognizer();
-        tap.addTarget(self, action: #selector(InputView.tapClick));
+        tap.addTarget(self, action: #selector(InputView2.tapClick));
         bgView.addGestureRecognizer(tap);
         
         
@@ -86,27 +86,32 @@ class InputView: UIView ,UICollectionViewDelegate,UICollectionViewDataSource{
         bottomView.addSubview(collectionView);
         
     }
-
+    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1;
     }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return regionArray.count;
+        return numArray.count;
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("InputViewCollectionViewCell", forIndexPath: indexPath) as! InputViewCollectionViewCell;
         
-        cell.showLabel.layer.borderWidth = 1;
-        cell.showLabel.layer.borderColor = UIColor.init(red: 152/255, green: 245/255, blue: 255/255, alpha: 1).CGColor;
-        cell.showLabel.text = regionArray[indexPath.row];
-
+        if !numArray[indexPath.row].isEmpty {
+            cell.showLabel.layer.borderWidth = 1;
+            cell.showLabel.layer.borderColor = UIColor.init(red: 152/255, green: 245/255, blue: 255/255, alpha: 1).CGColor;
+            cell.showLabel.text = numArray[indexPath.row];
+        }
         return cell;
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.delegate?.getInputViewString(regionArray[indexPath.row]);
+        
+        if !numArray[indexPath.row].isEmpty {
+            print(" -- \(numArray[indexPath.row])");
+            self.delegate?.getInputView3String(numArray[indexPath.row]);
+        }
     }
     
     func tapClick() {
@@ -114,11 +119,11 @@ class InputView: UIView ,UICollectionViewDelegate,UICollectionViewDataSource{
     }
     
     /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+     // Only override drawRect: if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func drawRect(rect: CGRect) {
+     // Drawing code
+     }
+     */
+    
 }

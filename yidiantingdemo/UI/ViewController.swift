@@ -22,7 +22,7 @@ class ViewController: UIViewController , UIScrollViewDelegate{
     
     @IBOutlet weak var liyuButton: UIButton!
     
-    var leftViewController: LeftViewController?
+    var leftViewController: LeftViewController? = nil;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,19 +89,19 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             caTrans.type = kCATransitionPush;
             caTrans.subtype = kCATransitionFromRight;
             self.view.window?.layer.addAnimation(caTrans, forKey: nil);
-            
-            self.presentViewController(StopPayViewController(), animated: false, completion: {
+            self.presentViewController(StopPayViewController(), animated: false, completion: { 
                 
             })
+            
         case 4:
             print("按钮按下\(tag)");
         case 5:
             print("按钮按下\(tag)");
             
             leftViewController?.rightView.hidden = true;
-            UIView.animateWithDuration(0.5, delay: 0.1, options: UIViewAnimationOptions.CurveEaseInOut, animations: { 
+            self.view.addSubview(self.leftViewController!.view);
+            UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                     self.leftViewController!.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-                    self.view.addSubview(self.leftViewController!.view);
                 }, completion: { (finsih) in
                     self.leftViewController!.rightView.hidden = false;
             })

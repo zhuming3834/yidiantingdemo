@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34BA8121D0911500074F5A4 /* InputViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BA8101D0911500074F5A4 /* InputViewCollectionViewCell.swift */; };
+		C34BA8131D0911500074F5A4 /* InputViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34BA8111D0911500074F5A4 /* InputViewCollectionViewCell.xib */; };
+		C34BA8151D09335C0074F5A4 /* InputView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BA8141D09335C0074F5A4 /* InputView2.swift */; };
+		C34BA8171D0934FD0074F5A4 /* InputView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34BA8161D0934FD0074F5A4 /* InputView3.swift */; };
 		C376F8A01D01D70F00AF8A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C376F89F1D01D70F00AF8A4D /* Assets.xcassets */; };
 		C376F8A31D01D70F00AF8A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C376F8A11D01D70F00AF8A4D /* LaunchScreen.storyboard */; };
 		C376F8AE1D01D70F00AF8A4D /* yidiantingdemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376F8AD1D01D70F00AF8A4D /* yidiantingdemoTests.swift */; };
 		C376F8B91D01D70F00AF8A4D /* yidiantingdemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376F8B81D01D70F00AF8A4D /* yidiantingdemoUITests.swift */; };
+		C39DC3271D09AD5C001848C9 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39DC3251D09AD5C001848C9 /* CarListViewController.swift */; };
+		C39DC3281D09AD5C001848C9 /* CarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C39DC3261D09AD5C001848C9 /* CarListViewController.xib */; };
+		C39DC32B1D09B242001848C9 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39DC3291D09B242001848C9 /* CarListTableViewCell.swift */; };
+		C39DC32C1D09B242001848C9 /* CarListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C39DC32A1D09B242001848C9 /* CarListTableViewCell.xib */; };
 		C3B0031B1D03167300A72D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B003171D03167300A72D11 /* AppDelegate.swift */; };
 		C3B0031C1D03167300A72D11 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B003181D03167300A72D11 /* IndexViewController.swift */; };
 		C3B0031D1D03167300A72D11 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B003191D03167300A72D11 /* IndexViewController.xib */; };
@@ -45,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C34BA8101D0911500074F5A4 /* InputViewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		C34BA8111D0911500074F5A4 /* InputViewCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		C34BA8141D09335C0074F5A4 /* InputView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView2.swift; sourceTree = "<group>"; };
+		C34BA8161D0934FD0074F5A4 /* InputView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView3.swift; sourceTree = "<group>"; };
 		C376F8951D01D70F00AF8A4D /* yidiantingdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yidiantingdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376F89F1D01D70F00AF8A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C376F8A21D01D70F00AF8A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +67,10 @@
 		C376F8B41D01D70F00AF8A4D /* yidiantingdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yidiantingdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376F8B81D01D70F00AF8A4D /* yidiantingdemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yidiantingdemoUITests.swift; sourceTree = "<group>"; };
 		C376F8BA1D01D70F00AF8A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39DC3251D09AD5C001848C9 /* CarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		C39DC3261D09AD5C001848C9 /* CarListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarListViewController.xib; sourceTree = "<group>"; };
+		C39DC3291D09B242001848C9 /* CarListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
+		C39DC32A1D09B242001848C9 /* CarListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarListTableViewCell.xib; sourceTree = "<group>"; };
 		C3B003171D03167300A72D11 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3B003181D03167300A72D11 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		C3B003191D03167300A72D11 /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
@@ -161,7 +177,15 @@
 				C3B14C431D04767D00CA9BBC /* LeftTableViewCell.xib */,
 				C3FB501E1D06F84400873077 /* StopPayViewController.swift */,
 				C3FB501F1D06F84400873077 /* StopPayViewController.xib */,
+				C39DC3251D09AD5C001848C9 /* CarListViewController.swift */,
+				C39DC3261D09AD5C001848C9 /* CarListViewController.xib */,
+				C39DC3291D09B242001848C9 /* CarListTableViewCell.swift */,
+				C39DC32A1D09B242001848C9 /* CarListTableViewCell.xib */,
 				C3FB50321D07160900873077 /* InputView.swift */,
+				C34BA8141D09335C0074F5A4 /* InputView2.swift */,
+				C34BA8161D0934FD0074F5A4 /* InputView3.swift */,
+				C34BA8101D0911500074F5A4 /* InputViewCollectionViewCell.swift */,
+				C34BA8111D0911500074F5A4 /* InputViewCollectionViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -274,12 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C376F8A31D01D70F00AF8A4D /* LaunchScreen.storyboard in Resources */,
+				C39DC3281D09AD5C001848C9 /* CarListViewController.xib in Resources */,
 				C3FB50211D06F84400873077 /* StopPayViewController.xib in Resources */,
 				C3B003351D0316F000A72D11 /* Images.xcassets in Resources */,
 				C3B14C411D044E7200CA9BBC /* LeftViewController.xib in Resources */,
 				C3B14C1F1D04341C00CA9BBC /* ViewController.xib in Resources */,
 				C3B14C211D043A8700CA9BBC /* Main.storyboard in Resources */,
+				C34BA8131D0911500074F5A4 /* InputViewCollectionViewCell.xib in Resources */,
 				C3B14C451D04767D00CA9BBC /* LeftTableViewCell.xib in Resources */,
+				C39DC32C1D09B242001848C9 /* CarListTableViewCell.xib in Resources */,
 				C376F8A01D01D70F00AF8A4D /* Assets.xcassets in Resources */,
 				C3B0031D1D03167300A72D11 /* IndexViewController.xib in Resources */,
 			);
@@ -307,12 +334,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B0031B1D03167300A72D11 /* AppDelegate.swift in Sources */,
+				C34BA8171D0934FD0074F5A4 /* InputView3.swift in Sources */,
 				C3FB50331D07160900873077 /* InputView.swift in Sources */,
+				C34BA8121D0911500074F5A4 /* InputViewCollectionViewCell.swift in Sources */,
 				C3B14C441D04767D00CA9BBC /* LeftTableViewCell.swift in Sources */,
 				C3B14C1E1D04341C00CA9BBC /* ViewController.swift in Sources */,
+				C34BA8151D09335C0074F5A4 /* InputView2.swift in Sources */,
 				C3FB50201D06F84400873077 /* StopPayViewController.swift in Sources */,
 				C3B14C401D044E7200CA9BBC /* LeftViewController.swift in Sources */,
+				C39DC3271D09AD5C001848C9 /* CarListViewController.swift in Sources */,
 				C3B0031C1D03167300A72D11 /* IndexViewController.swift in Sources */,
+				C39DC32B1D09B242001848C9 /* CarListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

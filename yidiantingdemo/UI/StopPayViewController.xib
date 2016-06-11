@@ -29,7 +29,7 @@
                                 <constraint firstAttribute="height" constant="44" id="fPk-c8-md1"/>
                                 <constraint firstAttribute="width" constant="44" id="tAr-AV-vN3"/>
                             </constraints>
-                            <state key="normal" image="icon_nav_left.png"/>
+                            <state key="normal" image="icon_nav_left"/>
                             <connections>
                                 <action selector="navBackBtnClick:" destination="-1" eventType="touchUpInside" id="N23-wZ-lZu"/>
                             </connections>
@@ -40,7 +40,7 @@
                                 <constraint firstAttribute="width" constant="44" id="WIR-CO-nPK"/>
                                 <constraint firstAttribute="height" constant="44" id="bt8-wP-Ael"/>
                             </constraints>
-                            <state key="normal" image="icon_nav_right.png"/>
+                            <state key="normal" image="icon_nav_right"/>
                             <connections>
                                 <action selector="navRightBtnClick:" destination="-1" eventType="touchUpInside" id="OtD-MO-LKm"/>
                             </connections>
@@ -113,7 +113,7 @@
                                                 <constraint firstAttribute="width" constant="40" id="NTi-J6-yi1"/>
                                                 <constraint firstAttribute="height" constant="40" id="pta-xa-PVZ"/>
                                             </constraints>
-                                            <state key="normal" image="icon_tuige.png"/>
+                                            <state key="normal" image="icon_tuige"/>
                                             <connections>
                                                 <action selector="delteBtnClick:" destination="-1" eventType="touchUpInside" id="FqB-qs-bwz"/>
                                             </connections>
@@ -137,7 +137,7 @@
                                         <constraint firstAttribute="height" constant="40" id="K2b-l5-lgy"/>
                                         <constraint firstAttribute="width" constant="40" id="zjL-Ob-ImT"/>
                                     </constraints>
-                                    <state key="normal" image="icon_search_car.png"/>
+                                    <state key="normal" image="icon_search_car"/>
                                     <connections>
                                         <action selector="searchBtnClick:" destination="-1" eventType="touchUpInside" id="iyN-xZ-45i"/>
                                     </connections>
@@ -203,9 +203,9 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="icon_nav_left.png" width="30" height="30"/>
-        <image name="icon_nav_right.png" width="30" height="30"/>
-        <image name="icon_search_car.png" width="30" height="30"/>
-        <image name="icon_tuige.png" width="30" height="30"/>
+        <image name="icon_nav_left" width="30" height="30"/>
+        <image name="icon_nav_right" width="30" height="30"/>
+        <image name="icon_search_car" width="30" height="30"/>
+        <image name="icon_tuige" width="30" height="30"/>
     </resources>
 </document>

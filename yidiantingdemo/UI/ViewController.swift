@@ -83,6 +83,16 @@ class ViewController: UIViewController , UIScrollViewDelegate{
             print("按钮按下\(tag)");
         case 2:
             print("按钮按下\(tag)");
+            let caTrans = CATransition();
+            caTrans.duration = 0.35;
+            caTrans.type = kCATransitionPush;
+            caTrans.subtype = kCATransitionFromRight;
+            self.view.window?.layer.addAnimation(caTrans, forKey: nil);
+            self.presentViewController(SearchCarViewController(), animated: false, completion: {
+                
+            })
+
+            
         case 3:
             let caTrans = CATransition();
             caTrans.duration = 0.35;

@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        let mapManager = BMKMapManager();
+        let ret = mapManager.start("0QNlbtpBUY4jc01mbUuYOVfWjqyWulCk", generalDelegate: nil)
+        if ret == false {
+            NSLog("manager start failed!")
+        }
         // 设置跟控制器
         let  launch =  NSUserDefaults.standardUserDefaults().valueForKey("firstLaunch");
         
@@ -24,13 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let indexVC = IndexViewController();
             window?.rootViewController = indexVC;
         } else{
-//            let navControlView = UINavigationController.init(rootViewController: ViewController());
-//            print("\(navControlView.childViewControllers.count)");
             window?.rootViewController = ViewController();
         }
+    
         return true
     }
-
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

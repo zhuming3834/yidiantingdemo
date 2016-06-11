@@ -47,19 +47,19 @@ class IndexViewController: UIViewController, UIScrollViewDelegate{
         
         for index in 0...3  {
             
-            let imageView = UIImageView.init(frame: CGRectMake((self.view.frame.size.width)*CGFloat(index), 0, self.view.frame.size.width, self.view.frame.size.height));
+            let imageView = UIImageView.init(frame: CGRectMake((Tools.getScreenWidth())*CGFloat(index), 0, Tools.getScreenWidth(), Tools.getScreenHeight()));
             imageView.image = UIImage.init(named: "LaunchImage-700-568h@2x.png");
             scrollView.addSubview(imageView);
             
         }
-        scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 4, self.view.frame.size.height);
+        scrollView.contentSize = CGSizeMake(Tools.getScreenWidth() * 4, Tools.getScreenHeight());
         pageControl.numberOfPages = 4;
     }
     
 // MARK: UIScrollViewDelegate
     func scrollViewDidScroll(scrollView: UIScrollView) {
         // 修改pageControl当前的page
-        let index = scrollView.contentOffset.x/self.view.frame.size.width;
+        let index = scrollView.contentOffset.x/Tools.getScreenWidth();
         pageControl.currentPage = Int(index);
         
         if index == 3 {

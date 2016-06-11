@@ -1,0 +1,6 @@
+framework module Pods_yidiantingdemo {
+  umbrella header "Pods-yidiantingdemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
